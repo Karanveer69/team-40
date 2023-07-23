@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .grid{
+            height: 100vh;
+            display: grid;
+            gap: 3px;
+            grid-template-columns: 1fr 1fr 1fr ;
+            background: #000;
+            transition: 500ms;
+        }
+        :where(#left,#centre,#right){
+            background-color: rgb(255, 235, 205);
+        }
+        :where(#left,#centre,#right):hover{
+            background-color: rgb(77, 220, 20);
+            transition: 500ms;
+        }
+        .grid:has(#left:hover){
+            grid-template-columns: 1.5fr 0.75fr 0.75fr;
+        }
+        .grid:has(#right:hover){
+            grid-template-columns:  0.75fr 0.75fr 1.5fr;
+        }
+        .grid:has(#centre:hover){
+            grid-template-columns: 0.75fr 1.5fr  0.75fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div id="left"></div>
+        <div id="centre"></div>
+        <div id="right"></div>
+    </div>
+</body>
+</html>

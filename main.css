@@ -1,0 +1,193 @@
+   body { 
+    /* background-repeat: no-repeat;
+    background-size: 1535px 100vh;
+    overflow: hidden; */
+    margin: 0;
+    transition: 1s linear;
+
+   }
+   .butn{
+    height: 100vh;
+    width: 100%;
+    background-image: url('cover.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    transition: 1s linear;
+    /* overflow: hidden; */
+  }
+  #slideButton{
+    /* color: aliceblue; */
+    background-color: #0069d97b;
+    /* margin-left: 46vw;
+    margin-top: 55vh; */
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 1px solid transparent;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 400;
+}
+#slideButton:hover{
+    /* color: black; */
+    background-color: #0069d9;
+    cursor: pointer;
+}
+.slide-up {
+    display: none;
+    /* transform: translateY(100%); */
+    position: absolute;
+    top: -100%;
+    transition: top 1s linear;
+    /* transition: top 1s ease-out, top 1s ease-out; */
+}
+
+.slide-up.show {
+    display:block;
+    transition: top 1s linear;
+    /* transition: opacity 1s ease-out, top 1s ease-out; */
+    /* transform: translateY(0%); */
+    top: 0%;
+    /* transition: 5s; */
+}
+
+#grid {
+    height: 100vh;
+    width: 100%;
+}
+
+#left {
+    background: crimson;
+    .btn{
+        visibility: hidden;
+    }
+}
+
+
+#right {
+    background: navajowhite;
+    border: 3rem solid rgb(0 0 0 / 10%);
+    display: grid;
+    grid-template-columns: 70% auto;
+    height: 122vh;
+}
+#right:has(img){
+    width: 100vw;
+}
+
+#grid {
+    transition: 300ms;
+    display: grid;
+    grid-template-columns: 78px auto;
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden */
+}
+
+#grid:has(#left:hover) {
+    grid-template-columns: 30% auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#grid:has(#left:hover) {
+    .btn{ 
+        visibility: inherit;
+    }  
+}
+.container2{
+    position: relative;
+    height: 100vh;
+
+}
+.centre2{
+    position: absolute;
+    top: 40%;
+}
+.quickmaps{
+    background-color: #0069d9;
+    /* margin-left: 46vw;
+    margin-top: 55vh; */
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 1px solid transparent;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 500;
+    max-height: 10%;
+}
+
+.quickmaps:hover{
+    cursor: pointer;
+    background-color: #0069d97b;
+}
+
+
+.btn{
+    /* color: aliceblue; */
+    background-color: #8cd900;
+    /* margin-left: 46vw; */
+    /* margin-top: 55vh; */
+    /* padding: 0.5rem 1rem; */
+    /* width: 250px; */
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    transition: color .05s ease-in-out,background-color .15s ease-in-out,border-color .05s ease-in-out,box-shadow .05s ease-in-out;
+    border: 1px solid transparent;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    /* display: inline-block; */
+    font-weight: 700;
+    font-size: 18px;
+}
+.btn:hover{
+      /* transform: translate3d(0px 5px 0px); */
+    /* color: black; */
+    background-color: #8dd900cd;
+    cursor: pointer;
+    width: auto;
+  }
+  .container{
+    height: 100vh;
+    position: relative;
+
+  }
+  .center{
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container1{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    /* width: 30%; */
+  }
+  .center1{
+    position: relative;
+    /* width: 100px; */
+    height: 100vh;
+    width: 100%;
+  }
+  .dropdown{
+    top: 50%;
+  }
+
+
+  
